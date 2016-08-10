@@ -3,7 +3,7 @@ var notify = require('./notify/notify');
 var grab_json = require('./grab_json');
 // grab via api
 var number = process.argv[2];
-if (number.length < 2)
+if (number && number.length < 2)
 {
 	console.log('number is empty, stop processing');
 }else
@@ -31,6 +31,6 @@ if (number.length < 2)
 			console.log(err);
 		}
 	});
-	*/	
+	*/
 }
 
