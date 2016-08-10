@@ -1,5 +1,6 @@
 var request = require('request');
 var conf = require('../conf.json');
+var smsconf = require('./sms.conf.json');
 module.exports = {
 	doSms : function(string,cb){
 		request.post({
@@ -7,8 +8,8 @@ module.exports = {
 		form : {
 			grant_type : 'client_credentials',
 			scope : 'send,statistic,status',
-			client_id : 'nBo3R8w4gQWrxjhx3zkwbto6WxYgdNV0qXJx29Kb',
-			client_secret : 'q3VzA26pYWQdGmvWMBqhahGMxE2vro0vDbmGkLxO'
+			client_id : smsconf.client_id,
+			client_secret : smsconf.client_secret
 		},
 		json : true
 	},function(err,Response,obj){
