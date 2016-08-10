@@ -1,0 +1,16 @@
+{
+  "name": "smartfrend_checker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.14.0",
+    "cheerio": "~0.20.0",
+    "async": "~2.0.1"
+  }
+}
