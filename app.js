@@ -20,7 +20,7 @@ if (number && number.length < 2)
 	});
 	//grab via website
 	/*
-	grab.grabing('stw.adhi@gmail.com','kayabiasane',function(err,result){
+	grab.grabing('xxxxx','yyyy',function(err,result){
 		if (! err)
 		{
 			notify.notif(result,function(err){
